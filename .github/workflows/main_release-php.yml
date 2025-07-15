@@ -70,7 +70,7 @@ jobs:
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_803B2D74747D4D3EA6A30184D0145909 }}
 
       - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v3
+        uses: azure/webapps-deploy@v3-release-zip-archival-fix
         id: deploy-to-webapp
         with:
           app-name: 'release-php'
