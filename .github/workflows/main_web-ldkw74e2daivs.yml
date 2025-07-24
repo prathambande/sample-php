@@ -66,7 +66,7 @@ jobs:
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_EFC9A24B32794A4285D4229CE9385841 }}
 
       - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v3
+        uses: azure/webapps-deploy@releases/v2
         id: deploy-to-webapp
         with:
           app-name: 'web-ldkw74e2daivs'
